@@ -1,4 +1,4 @@
-<img loading="lazy" width="30px" src="./src-chrome/arxiv-redirector-banner.jpg" alt="Banner Image" /> 
+<img loading="lazy" width="300px" src="./src-chrome/arxiv-redirector-banner.jpg" alt="Banner Image" /> 
 
 # Arxiv Redirector
 
