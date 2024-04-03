@@ -1,0 +1,17 @@
+[
+    {
+        "id": 2,
+        "priority": 1,
+        "action": {
+            "type": "redirect",
+            "redirect": {
+                "regexSubstitution": "https://arxiv.org/pdf/\\2.pdf"
+            }
+        },
+        "condition": {
+            "regexFilter": "https://arxiv\\.org/(abs|html)/([^.]+\\.\\d+)(v\\d+)?",
+            "resourceTypes": ["main_frame"],
+            "excludedInitiatorDomains": ["arxiv.org"]
+        }
+    }
+]

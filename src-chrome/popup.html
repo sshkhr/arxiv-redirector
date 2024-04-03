@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Arxiv Redirector Settings</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.min.css">
+    <style>
+        body {
+            color: #900; /* Crimson Red */
+            background-color: #fff; /* White */
+            font-size: 14px;
+        }
+        .container {
+            width: 200px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            border-radius: 4px;
+            padding: 10px;
+            max-width: 100%;
+        }
+        .custom-radio {
+            display: flex;  
+            align-items: center;
+            position: relative;
+            padding-left: 15px;
+            margin-bottom: 6px;
+            cursor: pointer;
+            font-size: 15px;
+            user-select: none;
+        }
+        .custom-radio input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+        }
+        .checkmark {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 12px;
+            width: 12px;
+            background-color: #eee;
+            border-radius: 50%;
+        }
+        .custom-radio:hover input ~ .checkmark {
+            background-color: #ccc;
+        }
+        .custom-radio input:checked ~ .checkmark {
+            background-color: #900;
+        }
+        .checkmark:after {
+            content: "";
+            position: absolute;
+            display: none;
+        }
+        .custom-radio input:checked ~ .checkmark:after {
+            display: block;
+        }
+        .custom-radio .checkmark:after {
+            top: 4px;
+            left: 4px;
+            width: 4px;
+            height: 4px;
+            border-radius: 50%;
+            background: white;
+        }
+        h3 {
+            font-size: 16px;
+        }
+        #ruleForm {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        /* Button styling */
+        .button {
+            background-color: #900; /* Crimson Red */
+            color: white;
+            border: none;
+        }
+        .button:hover {
+            background-color: #900; /* No change on hover */
+        }
+        .button:active {
+            background-color: #ddd; /* Lighter shade of gray on active */
+        }
+        .custom-select select {
+            opacity: 1; /* Making the dropdown visible */
+            position: static; /* Resetting position to default */
+            -webkit-appearance: none; /* Removing default styling on WebKit browsers */
+            -moz-appearance: none; /* Removing default styling on Firefox */
+            appearance: none; /* Removing default styling */
+            padding: 5px;
+            border: 1px solid #ccc; /* Adding a border similar to text inputs */
+            border-radius: 4px; /* Matching the border-radius */
+            background-color: #fff; /* Background color */
+            margin-bottom: 15px; /* Adding some space below the dropdown */
+        }
+        /* Reduce vertical space after button */
+        form {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <center>
+        <img src="arxiv-redirector-banner.jpg" class="w-full mb-4">
+        <h2>Redirector</h2>
+        </center>
+        <form id="ruleForm">
+            <select name="redirectRule" id="redirectRule" class="custom-select">
+                <option value="absOnly">Redirect to Abstract</option>
+                <option value="pdfOnly">Redirect to PDF</option>
+                <option value="htmlOnly">Redirect to HTML</option>
+                <option value="noChange">No Redirect</option>
+            </select>
+            <button type="submit" class="button">Save</button>
+        </form>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
