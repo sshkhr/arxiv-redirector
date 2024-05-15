@@ -23,7 +23,7 @@
       },
       {
         "matches": ["*://*.arxiv.org/abs/*"],
-        "js": ["vanitybutton.js"]
+        "js": ["ar5ivbutton.js"]
       }
     ],
     "background": {
