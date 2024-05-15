@@ -5,7 +5,7 @@ function insertArxivVanityButton() {
   
     const vanityButton = document.createElement('li');
     vanityButton.innerHTML = `
-      <a href="https://www.arxiv-vanity.com/papers/${window.location.pathname.split('/')[2]}/" class="abs-button" id="vanity-download-link">HTML (arXiv vanity)</a>
+      <a href="https://www.arxiv-vanity.com/papers/${window.location.pathname.split('/')[2]}/" class="abs-button" id="vanity-download-link">HTML (ar5iv)</a>
     `;
     pdfButton.parentElement.insertAdjacentElement('afterend', vanityButton);
   }
