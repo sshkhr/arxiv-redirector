@@ -14,6 +14,10 @@
       {
         "matches": ["*://*.arxiv.org/html/*"],
         "js": ["content.js"]
+      },
+      {
+        "matches": ["*://*.arxiv.org/abs/*"],
+        "js": ["vanitybutton.js"]
       }
     ],
     "background": {
