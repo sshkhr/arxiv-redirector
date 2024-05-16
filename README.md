@@ -2,12 +2,30 @@
 
 # Arxiv Redirector
 
-Arxiv Redirector streamlines your arXiv browsing by auto-redirecting external links to your chosen default view: Abstract, PDF, or HTML. In case the HTML version is not available from arXiv, it will re-direct you to arXiv vanity automatically.
+Arxiv Redirector streamlines your arXiv browsing by auto-redirecting external links to your chosen default view: Abstract, PDF, or HTML. In case the HTML version is not available from arXiv, it will re-direct you to ar5iv automatically.
 
 ## Features
 
 * **Automatic Redirection:** Choose your default viewing preference once and let Arxiv Redirector handle the rest.
-* **HTML Fallback:** In cases where the HTML version of a document isn't available on arXiv, Arxiv Redirector automatically redirects you to arXiv Vanity for a seamless browsing experience.
+
+<p float="left">
+  <img src="screenshots/01_choice_abtract.png" width="400" />
+  <img src="screenshots/02_redirect.png" width="400" /> 
+</p>
+
+* **HTML Fallback:** In cases where the HTML version of a document isn't available on arXiv, Arxiv Redirector automatically redirects you to ar5iv for a seamless browsing experience.
+
+<p float="left">
+  <img src="screenshots/03_html_select.png" width="400" />
+  <img src="screenshots/04_html_redirect.png" width="400" /> 
+</p>
+
+* **Adds HTML (ar5iv) link to abstract page:** For arxiv papers that don't have an HTML version, Arxiv Redirector adds a link to the ar5iv version of the paper on the abstract page.
+
+<p float="left">
+  <img src="screenshots/05_ar5iv_link.png" width="400" />
+</p>
+
 * **Support for Chrome and Firefox:**  Available for both Google Chrome and Mozilla Firefox browsers.
 * **Installation:** Arxiv Redirector can be installed from the Chrome Web Store or Firefox Add-ons page:
 
